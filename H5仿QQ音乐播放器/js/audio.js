@@ -4,11 +4,11 @@ window.onload=function(){
 		/*{"singer":"测试","src":"music/测试.mp3","title":"测试","thum":"images/default.jpg"},
 		{"singer":"测试2","src":"music/测试2.mp3","title":"测试2","thum":"images/default.jpg"}
 		*/
-		{"singer":"张学友","src":"http://yinyueshiting.baidu.com/data2/music/134380372/3029961470135661128.mp3?xcode=31bece4497d272da29676627b54cb918","title":"一千个伤心的理由","thum":"images/z.jpg"},
-		{"singer":"刘若英","src":"http://yinyueshiting.baidu.com/data2/music/137760884/24044104230400320.mp3?xcode=6518786fb15c0987c6826868de970894","title":"十年","thum":"images/l.jpg"},
+		{"singer":"张学友","src":"http://yinyueshiting.baidu.com/data2/music/137284009/114627576172800128.mp3?xcode=ba0fc5edded117c39614b4474386abae","title":"一千个伤心的理由","thum":"images/z.jpg"},
+		{"singer":"刘若英","src":"http://yinyueshiting.baidu.com/data2/music/137284009/114627576172800128.mp3?xcode=ba0fc5edded117c39614b4474386abae","title":"十年","thum":"images/l.jpg"},
 		{"singer":"张学友","src":"http://yinyueshiting.baidu.com/data2/music/137284009/114627576172800128.mp3?xcode=ba0fc5edded117c39614b4474386abae","title":"如果.爱","thum":"images/x.jpg"},
-		{"singer":"张学友","src":"http://yinyueshiting.baidu.com/data2/music/134372745/774043154800128.mp3?xcode=f2bc64400f729d696a37d80a2c02fc5b","title":"旧情绵绵","thum":"images/z.jpg"},
-		{"singer":"张学友","src":"http://yinyueshiting.baidu.com/data2/music/134371773/2295731470196861128.mp3?xcode=f2bc64400f729d6985f6fb12ebde0b01","title":"只想一生跟你走","thum":"images/t.jpg"}
+		{"singer":"张学友","src":"http://yinyueshiting.baidu.com/data2/music/137284009/114627576172800128.mp3?xcode=ba0fc5edded117c39614b4474386abae","title":"旧情绵绵","thum":"images/z.jpg"},
+		{"singer":"张学友","src":"http://yinyueshiting.baidu.com/data2/music/137284009/114627576172800128.mp3?xcode=ba0fc5edded117c39614b4474386abae","title":"只想一生跟你走","thum":"images/t.jpg"}
 	];
 	
 	var player = document.getElementById('audio'); //播放器
@@ -31,7 +31,7 @@ window.onload=function(){
 	var singleList = document.getElementById('singleList');
 	//生成播放列表
 	for(var i=0;i<data.length;i++){
-		str+='<li title="'+data[i].title+'" id="'+i+'">'+
+		str+='<li title="'+data[i].title+'" data-src="'+data[i].src+'" id="'+i+'">'+
 				'<strong class="play-time">'+toZero(i+1)+'</strong>'+
 				'<strong class="music-name">'+data[i].title+'</strong>'+
 				'<strong class="singer-name">'+data[i].singer+'</strong>'+
@@ -49,7 +49,8 @@ window.onload=function(){
 		}
 		if(target.nodeName.toLowerCase()=='li' || target.nodeName.toLowerCase()=='strong'){
 			target.parentNode.className='play-current'
-			player.src = 'music/'+target.parentNode.title+'.mp3';
+			//player.src = 'music/'+target.parentNode.title+'.mp3';
+			player.src = target.parentNode.getAttribute('data-src');
 			player.play();
 			playBtn.className='play pause';
 			//歌曲加载完毕
