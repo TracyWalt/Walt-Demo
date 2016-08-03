@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>audio</title>
+		<link rel="stylesheet" href="css/audio.css" />
+		<script type="text/javascript" src="js/audio.js" ></script>
+	</head>
+	<body>
+		<h2 class="bigtitle">请使用IE9+、谷歌、火狐等支持html5、css3浏览器查看</h2>
+		
+		<!--播放器代码-->
+		<audio id="audio"></audio>
+		<div id="player">
+			<div class="player-container">
+				<!--播放列表-->
+				<div class="player-list-box" id="playerListBox">
+					<div class="player-list-title">
+						<ul style="width:270px;">
+			                <li class="current"><a href="javascript:;">播放列表</a><i></i></li>
+			            </ul>
+						<span class="clear-list" onclick="alert('不删除了吧！日后再说！');">清空列表</span>
+						<strong class="close-list" id="closeList">收起播放列表</strong>
+					</div>
+					<div class="single-list">
+						<ul id="singleList"></ul>
+					</div>
+					
+				</div>
+				<!--//播放列表-->
+				<img src="images/default.jpg" id="musicPic" class="player-music-pic">
+				<div class="player-music-msg">
+					<h2 class="player-music-title" id="playerMusicTit">音乐你的生活</h2>
+					<p class="player-music-author" id="playerMusicAuthor">QQ音乐</p>
+					<span class="player-music-time" id="playerMusicTime"></span>
+					<div class="player-op">
+						<strong class="prev" id="playPrev">上一首</strong>
+						<strong class="play" id="playBtn">播放</strong>
+						<strong class="next" id="playNext">下一首</strong>
+						<strong class="order">顺序播放</strong>
+						<p class="volume">
+							<span class="volume-icon" id="volumeToggle">点击设为静音</span>
+							<span class="volume-regulate" id="volumeRegulate">
+								<span class="volume-bar" style="width:30%;"></span>
+								<span class="volume-op" style="left:30%;"></span>
+							</span>
+						</p>
+					</div>
+					<span class="player-music-list" id="showList">
+						<span id="listNum">0</span>
+					</span>
+					<span class="player-music-lyrics" onclick="alert('日后再说！');">歌词(L)</span>
+				</div>
+				<p class="player-bar">
+					<span class="player-bg-bar"></span>
+					<span class="player-download-bar" style="width: 100%;"></span>
+					<span class="player-current-bar" id="currentBar" style="width:0;"></span>
+					<span class="player-progress-op" id="progressOp" style="left:0;"></span>
+				</p>
+			</div>
+			<div class="player-toggle" id="playerToggle"></div>
+		</div>
+		<!--播放器代码 end-->
+	</body>
+</html>
