@@ -4,11 +4,11 @@ window.onload=function(){
 		/*{"singer":"测试","src":"music/测试.mp3","title":"测试","thum":"images/default.jpg"},
 		{"singer":"测试2","src":"music/测试2.mp3","title":"测试2","thum":"images/default.jpg"}
 		*/
-		{"singer":"张学友","src":"http://yinyueshiting.baidu.com/data2/music/137284009/114627576172800128.mp3?xcode=ba0fc5edded117c39614b4474386abae","title":"一千个伤心的理由","thum":"images/z.jpg"},
-		{"singer":"刘若英","src":"http://yinyueshiting.baidu.com/data2/music/137284009/114627576172800128.mp3?xcode=ba0fc5edded117c39614b4474386abae","title":"十年","thum":"images/l.jpg"},
-		{"singer":"张学友","src":"http://yinyueshiting.baidu.com/data2/music/137284009/114627576172800128.mp3?xcode=ba0fc5edded117c39614b4474386abae","title":"如果.爱","thum":"images/x.jpg"},
-		{"singer":"张学友","src":"http://yinyueshiting.baidu.com/data2/music/137284009/114627576172800128.mp3?xcode=ba0fc5edded117c39614b4474386abae","title":"旧情绵绵","thum":"images/z.jpg"},
-		{"singer":"张学友","src":"http://yinyueshiting.baidu.com/data2/music/137284009/114627576172800128.mp3?xcode=ba0fc5edded117c39614b4474386abae","title":"只想一生跟你走","thum":"images/t.jpg"}
+		{"singer":"张学友","src":"http://m10.music.126.net/20160803170525/761ca91cf7c7f6af69a2f217f6e06360/ymusic/042d/e80b/6174/501c076fe7e839c79f771818d17fc833.mp3","title":"一千个伤心的理由","thum":"images/z.jpg"},
+		{"singer":"刘若英","src":"http://m10.music.126.net/20160803170643/a4500eab091dd4de40e4d1eb7f39eb7b/ymusic/8216/cffa/9f07/1893cb619648e41163e87f1e80021e5b.mp3","title":"十年","thum":"images/l.jpg"},
+		{"singer":"张学友","src":"http://m10.music.126.net/20160803170715/07e8c414b73aeb143f9208001576a998/ymusic/62df/7b21/c947/38f8403c6af16e756233fcd9d94897db.mp3","title":"如果.爱","thum":"images/x.jpg"},
+		{"singer":"张学友","src":"http://m10.music.126.net/20160803170742/60113b7bff8d20407dd107f5792fe9a6/ymusic/54a0/f8f5/9656/0854385f57b68a56b8408d96f93c5c71.mp3","title":"旧情绵绵","thum":"images/z.jpg"},
+		{"singer":"张学友","src":"http://m10.music.126.net/20160803170803/5a7df3f5a97ae1b57a39727808eb3c7e/ymusic/accf/ae64/c53d/15a020cc8caf07be11c9f6fac327bfe3.mp3","title":"只想一生跟你走","thum":"images/t.jpg"}
 	];
 	
 	var player = document.getElementById('audio'); //播放器
